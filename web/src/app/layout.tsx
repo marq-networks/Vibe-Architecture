@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Space_Grotesk, Orbitron } from "next/font/google";
+import { Geist, Geist_Mono, Orbitron } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,10 +12,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const display = Space_Grotesk({
-  variable: "--font-display",
-  subsets: ["latin"],
-});
 
 const techno = Orbitron({
   variable: "--font-techno",
@@ -35,8 +31,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.cdnfonts.com" />
+        <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/cabinet-grotesk" />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${display.variable} ${techno.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${techno.variable} antialiased`}
       >
         {children}
       </body>

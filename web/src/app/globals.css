@@ -13,7 +13,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-display: var(--font-display);
+  --font-display: "Cabinet Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   --font-techno: var(--font-techno);
   /* Brand palette */
   --color-primary-50: #F3EEFF;
@@ -36,6 +36,11 @@ body {
   color: var(--foreground);
 }
 
+/* Apply Cabinet Grotesk to headings sitewide */
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+}
+
 /* Design tokens */
 .container-xl {
   @apply max-w-7xl mx-auto px-6;
@@ -47,6 +52,11 @@ body {
 
 .title-gradient {
   @apply bg-gradient-to-r from-primary-300 via-primary-500 to-accent bg-clip-text text-transparent;
+}
+
+/* Top gradient used for Navbar and Hero */
+.bg-top-gradient {
+  background: linear-gradient(90deg, #4B2E83 0%, #070C20 100%);
 }
 
 .glass {
@@ -79,9 +89,9 @@ body {
   isolation: isolate;
   width: 190px;
   height: 56px;
-  background: #FFFFFF;
+  background: #A78BFA;
   border-radius: 100px;
-  color: #2c2156;
+  color: #FFFFFF;
   justify-content: center;
   padding-left: 24px;
   padding-right: 24px;

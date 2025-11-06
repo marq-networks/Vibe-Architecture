@@ -1,17 +1,23 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import CTAButton from "./CTAButton";
 
 export default function Navbar() {
   return (
-    <header className="fixed inset-x-0 top-0 z-50">
+    <header className="absolute inset-x-0 top-0 z-20">
       <div className="max-w-7xl mx-auto px-6">
         {/* Top row */}
-        <div className="mt-4 flex items-center justify-between px-4 py-3 bg-white/10 backdrop-blur-md rounded-full border border-white/10">
+        <div className="mt-4 flex items-center justify-between px-4 py-3">
           {/* Brand */}
-          <div className="flex items-center gap-3">
-            <span className="font-techno tracking-widest text-sm">VIBE</span>
-            <span className="font-techno tracking-widest text-sm opacity-80">ARCHITECTS</span>
+          <div className="flex items-center">
+            <Image
+              src="/navbar/logo.png"
+              alt="Vibe Architects"
+              width={190}
+              height={24}
+              priority
+            />
           </div>
 
           {/* Links */}
@@ -22,21 +28,15 @@ export default function Navbar() {
           </nav>
 
           {/* Button */}
-          <Link href="#contact" className="cta-btn group">
-            <span>Contact Us</span>
-            <span className="ml-2 inline-block transition-transform group-hover:translate-x-0.5">→</span>
-          </Link>
+          <CTAButton href="#contact">Contact Us</CTAButton>
         </div>
 
         {/* Bottom line graphic */}
-        <div className="relative h-6 mt-3">
-          <Image
+        <div className="relative mt-3 w-full">
+          <img
             src="/navbar/bottomline.png"
             alt="Navbar underline"
-            fill
-            className="object-contain object-left"
-            sizes="100vw"
-            priority
+            className="object-contain w-full"
           />
         </div>
       </div>

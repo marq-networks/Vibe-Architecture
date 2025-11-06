@@ -1,55 +1,65 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
+import Link from "next/link";
+import CTAButton from "@/components/CTAButton";
 
 export default function Home() {
   return (
     <div className="min-h-screen font-sans">
-      {/* Navbar */}
-      <Navbar />
-
       <main className="relative">
         {/* Hero */}
-        <section className="relative py-20 pt-32" id="hero">
-          <div className="max-w-7xl mx-auto px-6 text-center">
-            <p className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs tracking-wide uppercase mx-auto mb-6">Vibe / Architects</p>
-            <h1 className="mx-auto max-w-3xl font-display text-4xl sm:text-5xl md:text-6xl font-semibold leading-tight bg-gradient-to-r from-primary-300 via-primary-500 to-accent bg-clip-text text-transparent">
-              Take Control Of Your AI Builds
+        <section
+          className="relative py-20 pt-32 overflow-hidden bg-top bg-no-repeat min-h-[720px]"
+          id="hero"
+          style={{ backgroundImage: "url(/hero/bg.png)", backgroundSize: "contain", backgroundColor: "#070C20" }}
+        >
+          {/* Navbar sits inside hero so they share the same background */}
+          <Navbar />
+          {/* Soft gradient to match reference and keep text readable */}
+          <div className="absolute inset-0 z-0 pointer-events-none bg-gradient-to-b from-transparent via-[#4B2E83]/20 to-[#070C20]/60" />
+          <div className="relative h-[100vh] z-10 max-w-7xl mx-auto px-6 text-center py-20">
+            <h1 className="mx-auto max-w-4xl font-display text-white text-5xl sm:text-6xl md:text-7xl font-bold leading-tight">
+              Take Control Of Your
+              <br className="hidden sm:block" />
+              AI Builds
             </h1>
             <p className="mx-auto mt-4 max-w-2xl text-zinc-300">
-              When AI apps break, it’s rarely the model. It’s the process.
-              Ship reproducible builds with a blueprint-first framework.
+              Vibe Architect captures every decision — every prompt, stack, and safeguard — so when your project pivots, you can rebuild the exact same app in hours, not weeks.  No chaos. No drift. Just reliable, repeatable creation.
             </p>
-            <div className="mt-8 flex items-center justify-center gap-4">
-              <a className="inline-flex items-center gap-2 rounded-full bg-primary-500 px-6 py-3 text-white hover:bg-primary-400 transition-colors" href="#blueprint">Get The Blueprint</a>
-              <a className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 hover:bg-white/10 transition-colors" href="#proof">See It In Action</a>
+            <div className="mt-8 flex justify-center">
+              <CTAButton href="#contact">Start Architecting Today</CTAButton>
             </div>
           </div>
         </section>
 
         {/* Pain */}
-        <section className="relative py-20" id="pain">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="grid items-center gap-8 md:grid-cols-2">
-              <div>
-                <p className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs tracking-wide uppercase mb-4">The Pain</p>
-                <h2 className="font-display text-3xl md:text-4xl bg-gradient-to-r from-primary-300 via-primary-500 to-accent bg-clip-text text-transparent">When AI Builds Break</h2>
-                <p className="mt-3 text-zinc-300">
-                  Mismatched specs, brittle orchestration, and missing observability cause chaos.
-                  We turn it into a repeatable, testable process so your stack works under pressure.
-                </p>
-                <div className="mt-6 flex flex-wrap gap-3">
-                  {['Spec Drift','Glue Code','Opaque Failures','Prod Panic'].map((t) => (
-                    <span key={t} className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs tracking-wide uppercase">{t}</span>
-                  ))}
-                </div>
-              </div>
-              <div className="relative">
-                <div className="p-10 text-center bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl shadow-[0_0_30px_rgba(139,92,246,0.35)]">
-                  <div className="mx-auto mb-4 h-24 w-24 rounded-full bg-gradient-to-tr from-primary-500 to-accent animate-float shadow-glow" />
-                  <p className="text-sm text-zinc-400">Process chaos → predictable flow</p>
-                </div>
+        <section
+          className="relative min-h-[720px] bg-center bg-no-repeat flex items-center justify-center"
+          id="pain"
+          style={{ backgroundImage: "url(/painsection/bg.png)", backgroundSize: "cover" }}
+        >
+          {/* Soft overlay to keep text readable over background */}
+          <div className="absolute inset-0 z-0 pointer-events-none bg-gradient-to-b from-transparent via-[#4B2E83]/10 to-[#070C20]/40" />
+          <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+            <p className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs tracking-wide uppercase mx-auto mb-6">The Pain</p>
+            <h2 className="font-display text-white text-3xl sm:text-4xl md:text-5xl font-semibold leading-snug">
+              When AI Builds Break, It’s Not
+              <br className="hidden sm:block" />
+              The Tech — It’s The Process.
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-sm text-zinc-300">
+              You deliver an AI app — then hear, “That’s not what I asked for.” Revisions mean lost hours and
+              inconsistent results. Even the same prompt gives a different outcome each time.
+            </p>
+            {/* Decorative arrow circle */}
+            <div className="mt-8 flex justify-center">
+              <div className="h-14 w-14 rounded-full bg-[#A78BFA] shadow-[0_0_24px_rgba(139,92,246,0.45)] flex items-center justify-center">
+                <span className="text-white text-xl">↓</span>
               </div>
             </div>
+            <p className="mt-4 text-xs text-zinc-400">
+              That’s why we built Vibe Architect — to turn chaos into clarity.
+            </p>
           </div>
         </section>
 
@@ -60,11 +70,11 @@ export default function Home() {
             <h2 className="font-display text-3xl md:text-4xl bg-gradient-to-r from-primary-300 via-primary-500 to-accent bg-clip-text text-transparent">A Framework That Makes AI Reproducible</h2>
             <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
               {[
-                {t:'Blueprints',d:'Requirements → Specs'},
-                {t:'Orchestration',d:'Reliable flows'},
-                {t:'Data & Prompts',d:'Versioned assets'},
-                {t:'Testing & Observability',d:'Confident releases'},
-                {t:'Ops',d:'Lifecycle & maintain'},
+                { t: 'Blueprints', d: 'Requirements → Specs' },
+                { t: 'Orchestration', d: 'Reliable flows' },
+                { t: 'Data & Prompts', d: 'Versioned assets' },
+                { t: 'Testing & Observability', d: 'Confident releases' },
+                { t: 'Ops', d: 'Lifecycle & maintain' },
               ].map((c) => (
                 <div key={c.t} className="p-6 bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl hover:shadow-lg transition-shadow">
                   <h3 className="font-display text-lg">{c.t}</h3>
@@ -73,7 +83,7 @@ export default function Home() {
               ))}
             </div>
             <div className="mt-8">
-              <a className="inline-flex items-center gap-2 rounded-full bg-primary-500 px-6 py-3 text-white hover:bg-primary-400 transition-colors" href="#blueprint">Get The Framework</a>
+              <CTAButton href="#blueprint">Get The Framework</CTAButton>
             </div>
           </div>
         </section>
@@ -85,9 +95,9 @@ export default function Home() {
             <h2 className="font-display text-3xl md:text-4xl bg-gradient-to-r from-primary-300 via-primary-500 to-accent bg-clip-text text-transparent">Who It’s For</h2>
             <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
               {[
-                {t:'Practitioners & Agencies',d:'Deliver client work reliably.'},
-                {t:'Educators & Trainers',d:'Teach the real process.'},
-                {t:'Product Teams & Innovators',d:'Ship fast without breaking.'},
+                { t: 'Practitioners & Agencies', d: 'Deliver client work reliably.' },
+                { t: 'Educators & Trainers', d: 'Teach the real process.' },
+                { t: 'Product Teams & Innovators', d: 'Ship fast without breaking.' },
               ].map((c) => (
                 <div key={c.t} className="p-6 bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl hover:shadow-lg transition-shadow">
                   <h3 className="font-display text-lg">{c.t}</h3>
@@ -106,7 +116,7 @@ export default function Home() {
               <h2 className="font-display text-3xl md:text-4xl bg-gradient-to-r from-primary-300 via-primary-500 to-accent bg-clip-text text-transparent">We Rebuilt A Full AI App In 48 Hours</h2>
               <p className="mt-3 text-zinc-300">Using the blueprint framework, we shipped a production-grade rebuild with traceable quality, tests, and observability baked in.</p>
               <div className="mt-6">
-                <a className="inline-flex items-center gap-2 rounded-full bg-primary-500 px-6 py-3 text-white hover:bg-primary-400 transition-colors" href="#blueprint">Read The Breakdown</a>
+                <CTAButton href="#blueprint">Read The Breakdown</CTAButton>
               </div>
             </div>
             <div className="p-2 bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl shadow-[0_0_30px_rgba(139,92,246,0.35)]">
@@ -122,8 +132,8 @@ export default function Home() {
             <h2 className="font-display text-3xl md:text-4xl bg-gradient-to-r from-primary-300 via-primary-500 to-accent bg-clip-text text-transparent">Get Your Blueprint</h2>
             <p className="mx-auto mt-3 max-w-2xl text-zinc-300">Stop winging it. Start building with clarity and confidence.</p>
             <div className="mt-8 flex items-center justify-center gap-4">
-              <a className="inline-flex items-center gap-2 rounded-full bg-primary-500 px-6 py-3 text-white hover:bg-primary-400 transition-colors" href="#pricing">Start Free</a>
-              <a className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 hover:bg-white/10 transition-colors" href="#pricing">Become A Founding Architect</a>
+              <CTAButton href="#pricing">Start Free</CTAButton>
+              <CTAButton href="#pricing">Become A Founding Architect</CTAButton>
             </div>
           </div>
         </section>
@@ -147,8 +157,8 @@ export default function Home() {
                 ))}
               </ul>
               <div className="mt-6 flex flex-wrap gap-3">
-                <a className="inline-flex items-center gap-2 rounded-full bg-primary-500 px-6 py-3 text-white hover:bg-primary-400 transition-colors" href="#">Join For Free</a>
-                <a className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 hover:bg-white/10 transition-colors" href="#">Upgrade To Founding</a>
+                <CTAButton href="#">Join For Free</CTAButton>
+                <CTAButton href="#">Upgrade To Founding</CTAButton>
               </div>
             </div>
           </div>
