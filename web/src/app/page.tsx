@@ -64,26 +64,49 @@ export default function Home() {
         </section>
 
         {/* Solution */}
-        <section className="relative py-20" id="solution">
-          <div className="max-w-7xl mx-auto px-6 text-center">
-            <p className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs tracking-wide uppercase mx-auto mb-4">The Solution</p>
-            <h2 className="font-display text-3xl md:text-4xl bg-gradient-to-r from-primary-300 via-primary-500 to-accent bg-clip-text text-transparent">A Framework That Makes AI Reproducible</h2>
-            <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-              {[
-                { t: 'Blueprints', d: 'Requirements → Specs' },
-                { t: 'Orchestration', d: 'Reliable flows' },
-                { t: 'Data & Prompts', d: 'Versioned assets' },
-                { t: 'Testing & Observability', d: 'Confident releases' },
-                { t: 'Ops', d: 'Lifecycle & maintain' },
-              ].map((c) => (
-                <div key={c.t} className="p-6 bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl hover:shadow-lg transition-shadow">
-                  <h3 className="font-display text-lg">{c.t}</h3>
-                  <p className="mt-1 text-sm text-zinc-300">{c.d}</p>
-                </div>
+        <section
+          className="relative min-h-[720px] bg-center bg-no-repeat flex items-center justify-center"
+          id="solution"
+          style={{ backgroundImage: "url(/solution/bg.png)", backgroundSize: "cover" }}
+        >
+          {/* Soft overlay to keep text readable over background */}
+          <div className="absolute inset-0 z-0 pointer-events-none bg-gradient-to-b from-transparent via-[#4B2E83]/10 to-[#070C20]/40" />
+          <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+            <p className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs tracking-wide uppercase mx-auto mb-6">The Solution</p>
+            <h2 className="font-display text-white text-3xl sm:text-4xl md:text-5xl font-semibold leading-snug">
+              The Framework That Makes AI
+              <br className="hidden sm:block" />
+              Reproducible
+            </h2>
+            {/* Connected steps and cards */}
+            <div className="relative mt-10 max-w-6xl mx-auto">
+              {/* top connecting line */}
+              <div className="absolute left-4 right-4 top-8 h-px bg-white/15 rounded-full" />
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                {[
+                { label: "Design", title: "Blueprint Every Build", desc: "Capture requirements, logic, and design checkpoints in one unified template." },
+                { label: "Define", title: "Guardrails & Governance", desc: "Define ethical, functional, and creative boundaries for consistent results." },
+                { label: "Document", title: "Prompt Vault", desc: "Store, tag, and reuse prompts with full metadata." },
+                { label: "Deploy", title: "Design Tokens", desc: "Save aesthetic systems for exact visual reproduction." },
+                { label: "Rebuild", title: "Rebuild on Demand", desc: "Feed the framework back into your AI agent and recreate your entire app instantly." },
+              ].map(({ label, title, desc }) => (
+                  <div key={label} className="text-center">
+                    <div className="mx-auto w-44 rounded-full bg-gradient-to-b from-white/25 to-white/5 px-4 py-3 text-sm text-white backdrop-blur-sm ring-1 ring-white/20 shadow-[inset_0_1px_1px_rgba(255,255,255,0.35),0_8px_20px_rgba(7,12,32,0.45)]">
+                      {label}
+                    </div>
+                    <div className="mx-auto h-10 w-px bg-white/20" />
+                    <div className=" h-[200px] mx-auto p-2 rounded-2xl bg-gradient-to-b from-white/10 to-white/5 border border-white/20 backdrop-blur-md shadow-[0_0_24px_rgba(139,92,246,0.35)]">
+                      <div className="h-[300px] rounded-[18px] bg-white/95 text-[#1A1F2E] px-6 py-5 shadow-[0_6px_20px_rgba(7,12,32,0.25)] ring-1 ring-white/60">
+                        <h3 className="font-display text-base sm:text-lg font-semibold text-[#0B1020]">{title}</h3>
+                        <p className="mt-2 text-sm text-[#3A4056]">{desc}</p>
+                      </div>
+                    </div>
+                  </div>
               ))}
+              </div>
             </div>
-            <div className="mt-8">
-              <CTAButton href="#blueprint">Get The Framework</CTAButton>
+            <div className="mt-10 flex justify-center">
+              <CTAButton href="#blueprint">Get Started For Free</CTAButton>
             </div>
           </div>
         </section>
