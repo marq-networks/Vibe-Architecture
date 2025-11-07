@@ -8,13 +8,13 @@ export default function PricingSection() {
         {/* Ghost heading */}
         <div className="text-center mb-8 leading-none">
           <span
-            className="font-display text-transparent text-[52px] md:text-[88px] font-black tracking-tight"
+            className="font-hero text-transparent text-[52px] md:text-[88px] font-black tracking-tight"
             style={{ WebkitTextStroke: "1px rgba(255,255,255,0.12)" }}
           >
             PRICING
           </span>
           <span
-            className="font-display text-transparent text-[52px] md:text-[88px] font-black tracking-tight"
+            className="font-hero text-transparent text-[52px] md:text-[88px] font-black tracking-tight"
             style={{ WebkitTextStroke: "1px rgba(255,255,255,0.2)" }}
           >
             {" / OFFER"}
@@ -31,7 +31,7 @@ export default function PricingSection() {
             backgroundSize: "cover",
           }}
         >
-          <h3 className="font-display text-white text-[28px] sm:text-[34px] md:text-[40px] font-bold">
+          <h3 className="font-hero text-white text-[28px] sm:text-[34px] md:text-[40px] font-black">
             Start Free — Become A Founding Architect
           </h3>
           <p className="mt-2 text-xs md:text-sm text-zinc-300">
@@ -72,7 +72,7 @@ export default function PricingSection() {
             backgroundSize: "cover",
           }}
         >
-          <h3 className="font-display text-white text-[28px] sm:text-[34px] md:text-[40px] font-bold">
+          <h3 className="font-hero text-white text-[28px] sm:text-[34px] md:text-[40px] font-black">
             Join The Movement
           </h3>
           <p className="mt-2 text-xs md:text-sm text-zinc-300">

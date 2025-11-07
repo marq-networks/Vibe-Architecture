@@ -33,13 +33,13 @@ export default function UseCasesSection() {
         <div className="relative mb-2">
           <div className=" top-10 left-0 right-0 text-center select-none">
               <span
-              className="font-display text-transparent text-[56px] md:text-[92px] font-black tracking-tight"
+              className="font-hero text-transparent text-[56px] md:text-[92px] font-black tracking-tight"
               style={{ WebkitTextStroke: "1px rgba(255,255,255,0.12)" }}
             >
               USE <span className="text-white/20">CASES</span>
             </span>
           </div>
-          <h2 className="font-display text-white text-3xl md:text-4xl font-semibold text-center">Who It’s For</h2>
+          <h2 className="font-hero text-white text-3xl md:text-4xl font-black leading-tight text-center">Who It’s For</h2>
         </div>
 
         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3 justify-items-center">
@@ -55,7 +55,7 @@ export default function UseCasesSection() {
 
               <div className="space-y-2">
                 <p className="text-xs font-medium text-[#9F8CF7]">{c.role}</p>
-                <h3 className="font-display text-base sm:text-lg text-white">{c.title}</h3>
+                <h3 className="font-hero text-base sm:text-lg text-white">{c.title}</h3>
                 <p className="text-sm text-zinc-300">{c.desc}</p>
               </div>
             </div>

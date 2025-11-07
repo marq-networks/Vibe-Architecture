@@ -9,20 +9,20 @@ export default function PainSection() {
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         <div className="mb-2 leading-none">
           <span
-            className="font-display text-transparent text-[56px] md:text-[92px] font-black tracking-tight"
+            className="font-hero text-transparent text-[56px] md:text-[92px] font-black tracking-tight"
             style={{ WebkitTextStroke: "1px rgba(255,255,255,0.12)" }}
           >
             The
           </span>
           <br />
           <span
-            className="font-display text-transparent text-[56px] md:text-[92px] font-black tracking-tight"
+            className="font-hero text-transparent text-[56px] md:text-[92px] font-black tracking-tight"
             style={{ WebkitTextStroke: "1px rgba(255,255,255,0.2)" }}
           >
             Pain
           </span>
         </div>
-        <h2 className="font-display text-white text-3xl sm:text-4xl md:text-5xl font-semibold leading-snug">
+        <h2 className="font-hero text-white text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">
           When AI Builds Break, It’s Not
           <br className="hidden sm:block" />
           The Tech — It’s The Process.

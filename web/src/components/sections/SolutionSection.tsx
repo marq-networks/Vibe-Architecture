@@ -19,20 +19,20 @@ export default function SolutionSection() {
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         <div className="mb-2 leading-none">
           <span
-            className="font-display text-transparent text-[56px] md:text-[92px] font-black tracking-tight"
+            className="font-hero text-transparent text-[56px] md:text-[92px] font-black tracking-tight"
             style={{ WebkitTextStroke: "1px rgba(255,255,255,0.12)" }}
           >
             The
           </span>
           <br />
           <span
-            className="font-display text-transparent text-[56px] md:text-[92px] font-black tracking-tight"
+            className="font-hero text-transparent text-[56px] md:text-[92px] font-black tracking-tight"
             style={{ WebkitTextStroke: "1px rgba(255,255,255,0.2)" }}
           >
             Solution
           </span>
         </div>
-        <h2 className="font-display text-white text-3xl sm:text-4xl md:text-5xl font-semibold leading-snug">
+        <h2 className="font-hero text-white text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
           The Framework That Makes AI
           <br className="hidden sm:block" />
           Reproducible
@@ -50,7 +50,7 @@ export default function SolutionSection() {
                 <div className="mx-auto h-10 w-px bg-white/20" />
                 <div className="h-[220px] mx-auto p-2 rounded-2xl bg-gradient-to-b from-white/10 to-white/5 border border-white/20 backdrop-blur-md shadow-[0_0_24px_rgba(139,92,246,0.35)]">
                   <div className="h-full rounded-[18px] bg-white/95 text-[#1A1F2E] p-4 shadow-[0_6px_20px_rgba(7,12,32,0.25)] ring-1 ring-white/60">
-                    <h3 className="font-display  sm:text-lg font-semibold text-[#0B1020]">{title}</h3>
+                    <h3 className="font-hero  sm:text-lg font-semibold text-[#0B1020]">{title}</h3>
                     <p className="mt-2 text-[14px] text-[#3A4056]">{desc}</p>
                   </div>
                 </div>
