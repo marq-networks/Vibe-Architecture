@@ -1,16 +1,23 @@
 import CTAButton from "@/components/CTAButton";
+import Image from "next/image";
 
 export default function PricingSection() {
   return (
     <section className="relativ" id="pricing">
       <div className="max-w-6xl mx-auto px-6">
         {/* Ghost heading */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-8 leading-none">
           <span
             className="font-display text-transparent text-[52px] md:text-[88px] font-black tracking-tight"
-            style={{ WebkitTextStroke: "1px rgba(255,255,255,0.14)" }}
+            style={{ WebkitTextStroke: "1px rgba(255,255,255,0.12)" }}
           >
-            PRICING <span className="text-white/30">/ OFFER</span>
+            PRICING
+          </span>
+          <span
+            className="font-display text-transparent text-[52px] md:text-[88px] font-black tracking-tight"
+            style={{ WebkitTextStroke: "1px rgba(255,255,255,0.2)" }}
+          >
+            {" / OFFER"}
           </span>
         </div>
 
@@ -57,7 +64,7 @@ export default function PricingSection() {
 
         {/* Join The Movement */}
         <div
-          className="relative mx-auto rounded-[28px] px-6 py-12 text-center min-h-[380px] sm:min-h-[440px] flex flex-col items-center justify-center"
+          className="relative mx-auto rounded-[28px] px-6  text-center pt-20 pb-10 flex flex-col items-center justify-center"
           style={{
             backgroundImage: "url(/pricing/jointhemovementbg.png)",
             backgroundRepeat: "no-repeat",
@@ -74,12 +81,23 @@ export default function PricingSection() {
           <div className="mt-8 flex justify-center">
             <CTAButton href="#contact">Sign Up Now</CTAButton>
           </div>
-             <div className="mt-10 text-center">
-          <p className="text-[11px] text-zinc-400">Powered by The Online Adjunct</p>
+          <div className="mt-6 relative mx-auto w-full h-[10px] max-w-6xl">
+            <Image
+              src="/pricing/Line 4.png"
+              alt="Section divider line"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
+          <div className="text-center">
+            <p className="text-[11px] text-zinc-400">Powered by The Online Adjunct</p>
+          </div>
         </div>
-        </div>
+        {/* Divider line image below the section */}
 
-     
+
+
       </div>
     </section>
   );

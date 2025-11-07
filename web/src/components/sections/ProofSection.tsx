@@ -13,14 +13,21 @@ export default function ProofSection() {
       <div className="  mx-auto pl-8 grid items-center gap-10 md:grid-cols-2">
         {/* Left copy block */}
         <div className=" z-10">
-           <div className="">
-         <span
+          <div className="mb-2 leading-none">
+            <span
               className="font-display text-transparent text-[56px] md:text-[92px] font-black tracking-tight"
               style={{ WebkitTextStroke: "1px rgba(255,255,255,0.12)" }}
             >
-            PROOF <span className="text-white/20">& CREDIBILITY</span>
-          </span>
-        </div>
+              PROOF
+            </span>
+            <br />
+            <span
+              className="font-display text-transparent text-[56px] md:text-[92px] font-black tracking-tight"
+              style={{ WebkitTextStroke: "1px rgba(255,255,255,0.2)" }}
+            >
+              & CREDIBILITY
+            </span>
+          </div>
           <h2 className="font-display text-white text-[32px] sm:text-[40px] md:text-[48px] font-bold leading-[1.15]">
             How We Rebuilt A Full
             <br className="hidden sm:block" />

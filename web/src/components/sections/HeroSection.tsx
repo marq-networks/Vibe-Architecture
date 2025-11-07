@@ -10,8 +10,8 @@ export default function HeroSection() {
     >
       <Navbar />
       <div className="absolute inset-0 z-0 pointer-events-none bg-gradient-to-b from-transparent via-[#4B2E83]/20 to-[#070C20]/60" />
-      <div className="relative h-[100vh] z-10 max-w-7xl mx-auto px-6 text-center py-20">
-        <h1 className="mx-auto max-w-4xl font-display text-white text-5xl sm:text-6xl md:text-7xl font-bold leading-tight">
+      <div className="relative h-[100vh] z-10 max-w-7xl mx-auto px-6 text-center py-20 font-hero">
+        <h1 className="mx-auto max-w-4xl text-white text-5xl sm:text-6xl md:text-7xl font-black leading-tight">
           Take Control Of Your
           <br className="hidden sm:block" />
           AI Builds
