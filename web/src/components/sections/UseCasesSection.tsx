@@ -32,7 +32,10 @@ export default function UseCasesSection() {
         {/* Large ghost heading behind */}
         <div className="relative mb-2">
           <div className=" top-10 left-0 right-0 text-center select-none">
-            <span className="font-display text-6xl sm:text-7xl md:text-8xl font-black tracking-tight text-white/10">
+              <span
+              className="font-display text-transparent text-[56px] md:text-[92px] font-black tracking-tight"
+              style={{ WebkitTextStroke: "1px rgba(255,255,255,0.12)" }}
+            >
               USE <span className="text-white/20">CASES</span>
             </span>
           </div>

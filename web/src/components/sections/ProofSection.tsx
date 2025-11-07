@@ -3,18 +3,52 @@ import CTAButton from "@/components/CTAButton";
 
 export default function ProofSection() {
   return (
-    <section className="relative py-20" id="proof">
-      <div className="max-w-7xl mx-auto px-6 grid items-center gap-8 md:grid-cols-2">
-        <div>
-          <p className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs tracking-wide uppercase mb-4">Proof & Credibility</p>
-          <h2 className="font-display text-3xl md:text-4xl bg-gradient-to-r from-primary-300 via-primary-500 to-accent bg-clip-text text-transparent">We Rebuilt A Full AI App In 48 Hours</h2>
-          <p className="mt-3 text-zinc-300">Using the blueprint framework, we shipped a production-grade rebuild with traceable quality, tests, and observability baked in.</p>
-          <div className="mt-6">
-            <CTAButton href="#blueprint">Read The Breakdown</CTAButton>
+    <section
+      className="relative py-24 overflow-hidden"
+      id="proof"
+      style={{ backgroundImage: "url(/proof/bg.png)", backgroundSize: "cover", backgroundPosition: "center" }}
+    >
+      
+
+      <div className="  mx-auto pl-8 grid items-center gap-10 md:grid-cols-2">
+        {/* Left copy block */}
+        <div className=" z-10">
+           <div className="">
+         <span
+              className="font-display text-transparent text-[56px] md:text-[92px] font-black tracking-tight"
+              style={{ WebkitTextStroke: "1px rgba(255,255,255,0.12)" }}
+            >
+            PROOF <span className="text-white/20">& CREDIBILITY</span>
+          </span>
+        </div>
+          <h2 className="font-display text-white text-[32px] sm:text-[40px] md:text-[48px] font-bold leading-[1.15]">
+            How We Rebuilt A Full
+            <br className="hidden sm:block" />
+            AI App In 48 Hours
+          </h2>
+          <div className="mt-5 space-y-3 text-sm text-zinc-300 max-w-xl">
+            <p>
+              We delivered a complete AI workflow app — and the VP said, “This isn’t what I asked for.” Instead of starting from scratch,
+              we ran the Vibe Architect framework through our AI agent. It rebuilt the same app: same logic, same flow, same performance.
+              Only the colors changed.
+            </p>
+            <p className="font-medium text-white/90">That’s reproducible AI.</p>
+          </div>
+          <div className="mt-8 flex justify-start">
+            <CTAButton href="#blueprint">Start Architecting Today</CTAButton>
           </div>
         </div>
-        <div className="p-2 bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl shadow-[0_0_30px_rgba(139,92,246,0.35)]">
-          <Image src="https://dummyimage.com/900x520/141026/ffffff&text=Dashboard+Screenshot" alt="Dashboard screenshot" width={900} height={520} className="rounded-xl" />
+
+        {/* Right laptop image */}
+        <div className="relative z-10">
+          <Image
+            src="/proof/Macbook Air (2022).png"
+            alt="Macbook with dashboard screenshot"
+            width={900}
+            height={520}
+            className="mx-auto"
+            priority
+          />
         </div>
       </div>
     </section>

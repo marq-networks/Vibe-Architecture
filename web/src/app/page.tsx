@@ -27,7 +27,7 @@ export default function Home() {
         <ProofSection />
         <BlueprintSection />
         <PricingSection />
-        <SiteFooter />
+        
       </main>
     </div>
   );
