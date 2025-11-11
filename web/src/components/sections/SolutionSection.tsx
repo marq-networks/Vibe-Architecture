@@ -11,9 +11,9 @@ export default function SolutionSection() {
 
   return (
     <section
-      className="relative h-[100vh]   flex items-center justify-center py-20"
+      className="relative h-[100vh]  pb-20"
       id="solution"
-      style={{ backgroundImage: "url(/solution/bg.png)", backgroundSize: "cover" , backgroundPosition: "center" }}
+      style={{ backgroundImage: "url(/solution/bg.png)", backgroundSize: "cover", backgroundPosition: "center" }}
     >
       <div className="absolute inset-0 z-0 pointer-events-none bg-gradient-to-b from-transparent via-[#4B2E83]/10 to-[#070C20]/40" />
       <div className="relative flex flex-col justify-center items-center gap-6 z-10 max-w-7xl mx-auto text-center">
@@ -24,10 +24,10 @@ export default function SolutionSection() {
           >
             The
           </span>
-        
+
           <span
-                             className="ml-2 font-hero text-white/20 text-[56px] md:text-[90px] lg:text-[130px] xl:text-[150px] font-black tracking-tight"
-  >
+            className="ml-2 font-hero text-white/20 text-[56px] md:text-[90px] lg:text-[130px] xl:text-[150px] font-black tracking-tight"
+          >
             Solution
           </span>
         </div>

@@ -1,7 +1,7 @@
 export default function PainSection() {
   return (
     <section
-      className="relative bg-center gap-12 "
+      className="relative bg-center py-20 "
       id="pain"
       style={{ backgroundImage: "url(/painsection/bg.png)", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}
     >
