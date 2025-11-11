@@ -105,8 +105,8 @@ h1, h2, h3, .font-display {
   border-radius: 100px;
   color: #FFFFFF;
   justify-content: center;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 44px;
+  padding-right: 44px;
 }
 .cta-btn:hover {
   box-shadow: 0 0 24px rgba(139,92,246,0.45);

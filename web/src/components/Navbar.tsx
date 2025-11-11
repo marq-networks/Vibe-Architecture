@@ -6,7 +6,7 @@ import CTAButton from "./CTAButton";
 export default function Navbar() {
   return (
     <header className="absolute inset-x-0 top-0 z-20">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto  px-6">
         {/* Top row */}
         <div className="mt-4 flex items-center justify-between px-4 py-3">
           {/* Brand */}
@@ -32,7 +32,7 @@ export default function Navbar() {
         </div>
 
         {/* Bottom line graphic */}
-        <div className="relative mt-3 w-full">
+        <div className="relative mt-1 mb-5 w-full">
           <img
             src="/navbar/bottomline.png"
             alt="Navbar underline"

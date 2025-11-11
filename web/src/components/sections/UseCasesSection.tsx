@@ -39,7 +39,7 @@ export default function UseCasesSection() {
               USE <span className="text-white/20">CASES</span>
             </span>
           </div>
-          <h2 className="font-hero text-white text-3xl md:text-4xl font-extrabold leading-tight text-center">Who It’s For</h2>
+          <h2 className="font-hero text-white text-3xl md:text-5xl font-extrabold leading-tight text-center">Who It’s For</h2>
         </div>
 
         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3 justify-items-center">
