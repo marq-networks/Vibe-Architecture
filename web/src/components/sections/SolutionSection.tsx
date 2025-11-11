@@ -47,10 +47,10 @@ export default function SolutionSection() {
                   {label}
                 </div>
                 <div className="mx-auto h-10 w-px bg-white/20" />
-                <div className="h-[200px] mx-auto p-2 rounded-2xl bg-gradient-to-b from-white/10 to-white/5 border border-white/20 backdrop-blur-md shadow-[0_0_24px_rgba(139,92,246,0.35)]">
-                  <div className="h-full rounded-[18px] bg-white/95 text-[#1A1F2E] p-4 shadow-[0_6px_20px_rgba(7,12,32,0.25)] ring-1 ring-white/60">
-                    <h3 className="font-hero  sm:text-lg font-semibold text-[#0B1020]">{title}</h3>
-                    <p className="mt-2 text-[14px] text-[#3A4056]">{desc}</p>
+                <div className=" mx-auto p-6 rounded-2xl bg-gradient-to-b from-white/10 to-white/5 border border-white/20 backdrop-blur-md shadow-[0_0_24px_rgba(139,92,246,0.35)]">
+                  <div className="h-[100px] rounded-[18px] bg-white/95 text-[#1A1F2E] p-2 shadow-[0_6px_20px_rgba(7,12,32,0.25)] ring-1 ring-white/60">
+                    <h3 className="font-hero  text-[14px] font-bold text-[#0B1020]">{title}</h3>
+                    <p className="mt-2 text-[12px] text-[#3A4056]">{desc}</p>
                   </div>
                 </div>
               </div>
