@@ -23,7 +23,7 @@ export default function UseCasesSection() {
   ];
 
   return (
-    <section className="relative py-24" id="use-cases">
+    <section className="relative py-24 overflow-hidden isolate" id="use-cases">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#4B2E83]/10 to-[#070C20]/40" />
       </div>

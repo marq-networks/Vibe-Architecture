@@ -6,7 +6,7 @@ export default function PainSection() {
       style={{ backgroundImage: "url(/painsection/bg.png)", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}
     >
       {/* <div className="absolute inset-0 z-0 pointer-events-none bg-gradient-to-b from-transparent via-[#4B2E83]/10 to-[#070C20]/40" /> */}
-      <div className="relative  h-[100vh] gap-6 z-10 max-w-7xl flex flex-col justify-center item-center mx-auto px-6 text-center">
+      <div className="relative min-h-[100vh] gap-6 z-10 max-w-7xl flex flex-col justify-center items-center mx-auto px-6 text-center">
         <div className="mb-2 gap-2">
           <span
             className="font-hero text-transparent text-[56px] md:text-[90px] lg:text-[130px] xl:text-[150px] font-black tracking-tight"

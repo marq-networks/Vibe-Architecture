@@ -11,7 +11,7 @@ export default function SolutionSection() {
 
   return (
     <section
-      className="relative h-[100vh]  pb-20"
+      className="relative min-h-[100vh] pb-20 overflow-hidden"
       id="solution"
       style={{ backgroundImage: "url(/solution/bg.png)", backgroundSize: "cover", backgroundPosition: "center" }}
     >
