@@ -26,8 +26,7 @@ export default function SolutionSection() {
           </span>
           <br />
           <span
-            className="font-hero text-transparent text-[56px] md:text-[92px] font-black tracking-tight"
-            style={{ WebkitTextStroke: "1px rgba(255,255,255,0.2)" }}
+          className="text-white/20 font-hero text-transparent text-[56px] md:text-[92px] font-black tracking-tight "
           >
             Solution
           </span>

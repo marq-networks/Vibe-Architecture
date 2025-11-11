@@ -22,8 +22,8 @@ export default function ProofSection() {
             </span>
             <br />
             <span
-              className="font-hero text-transparent text-[56px] md:text-[92px] font-black tracking-tight"
-              style={{ WebkitTextStroke: "1px rgba(255,255,255,0.2)" }}
+              className="font-hero text-white/20 text-[56px] md:text-[92px] font-black tracking-tight"
+  
             >
               & CREDIBILITY
             </span>
