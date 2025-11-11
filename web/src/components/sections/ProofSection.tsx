@@ -4,7 +4,7 @@ import CTAButton from "@/components/CTAButton";
 export default function ProofSection() {
   return (
     <section
-      className="relative py-24 overflow-hidden"
+      className="relative py-12 sm:py-16 md:py-24 overflow-hidden"
       id="proof"
       style={{ backgroundImage: "url(/proof/bg.png)", backgroundSize: "cover", backgroundPosition: "center" }}
     >

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function BlueprintSection() {
   return (
     <section
-      className="relative py-24 overflow-hidden"
+      className="relative py-12 sm:py-16 md:py-24 overflow-hidden"
       id="blueprint"
       style={{
         backgroundImage: "url(/anchor/right.png)",

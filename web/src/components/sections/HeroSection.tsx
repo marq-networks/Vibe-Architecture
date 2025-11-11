@@ -4,12 +4,12 @@ import CTAButton from "@/components/CTAButton";
 export default function HeroSection() {
   return (
     <section
-      className="relative py-20 overflow-hidden bg-top bg-no-repeat min-h-[720px]"
+      className="relative py-12 sm:py-16 md:py-20 overflow-hidden bg-top bg-no-repeat min-h-[720px]"
       id="hero"
       style={{ backgroundImage: "url(/hero/bg.png)", backgroundSize: "cover", }}
     >
       <Navbar />
-      <div className="relative h-[80vh] mt-20 z-10  mx-auto text-center  flex flex-col justify-center item-center font-hero">
+      <div className="relative h-[80vh] mt-10 sm:mt-16 md:mt-20 z-10  mx-auto text-center  flex flex-col justify-center item-center font-hero">
         <h1 className="mx-auto max-w-4xl text-white text-5xl sm:text-6xl md:text-7xl font-black leading-tight">
           Take Control Of Your
           <br className="hidden sm:block" />

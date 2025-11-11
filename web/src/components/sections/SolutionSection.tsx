@@ -11,7 +11,7 @@ export default function SolutionSection() {
 
   return (
     <section
-      className="relative min-h-[100vh] pb-20 overflow-hidden"
+      className="relative min-h-[100vh] pb-12 sm:pb-16 md:pb-20 overflow-hidden"
       id="solution"
       style={{ backgroundImage: "url(/solution/bg.png)", backgroundSize: "cover", backgroundPosition: "center" }}
     >
@@ -57,7 +57,7 @@ export default function SolutionSection() {
             ))}
           </div>
         </div>
-        <div className="mt-10 flex justify-center">
+        <div className="mt-8 md:mt-10 flex justify-center">
           <CTAButton href="#blueprint">Get Started For Free</CTAButton>
         </div>
       </div>

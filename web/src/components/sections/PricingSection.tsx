@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function PricingSection() {
   return (
-    <section className="relativ" id="pricing">
+    <section className="relative" id="pricing">
       <div className="max-w-6xl mx-auto px-6">
         {/* Ghost heading */}
         <div className="text-center mb-8 leading-none">
@@ -23,12 +23,11 @@ export default function PricingSection() {
 
         {/* Start Free — Become A Founding Architect */}
         <div
-          className="relative mx-auto  rounded-[28px] px-6 py-12 text-center min-h-[420px] sm:min-h-[480px] flex flex-col items-center justify-center"
+          className="relative mx-auto rounded-[28px] px-6 py-12 text-center min-h-[420px] sm:min-h-[480px] flex flex-col items-center justify-center bg-no-repeat bg-center bg-contain md:bg-cover"
           style={{
             backgroundImage: "url(/pricing/pricingbg.png)",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-            backgroundSize: "cover",
           }}
         >
           <h3 className="font-hero text-white text-[28px] sm:text-[34px] md:text-[40px] font-black">
@@ -64,12 +63,11 @@ export default function PricingSection() {
 
         {/* Join The Movement */}
         <div
-          className="relative mx-auto rounded-[28px] px-6  text-center pt-20 pb-10 flex flex-col items-center justify-center"
+          className="relative mx-auto rounded-[28px] px-6 text-center pt-20 pb-10 flex flex-col items-center justify-center bg-no-repeat bg-center bg-contain md:bg-cover"
           style={{
             backgroundImage: "url(/pricing/jointhemovementbg.png)",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-            backgroundSize: "cover",
           }}
         >
           <h3 className="font-hero text-white text-[28px] sm:text-[34px] md:text-[40px] font-black">

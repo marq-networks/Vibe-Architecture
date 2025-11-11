@@ -1,7 +1,7 @@
 export default function PainSection() {
   return (
     <section
-      className="relative bg-center py-20 "
+      className="relative bg-center py-12 sm:py-16 md:py-20 "
       id="pain"
       style={{ backgroundImage: "url(/painsection/bg.png)", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}
     >
@@ -31,7 +31,7 @@ export default function PainSection() {
           You deliver an AI app — then hear, “That’s not what I asked for.” Revisions mean lost hours and
           inconsistent results. Even the same prompt gives a different outcome each time.
         </p>
-        <div className="mt-8 flex justify-center">
+        <div className="mt-6 sm:mt-8 flex justify-center">
           <div className="h-14 w-14 rounded-full bg-[#A78BFA] shadow-[0_0_24px_rgba(139,92,246,0.45)] flex items-center justify-center">
             <span className="text-white text-xl">↓</span>
           </div>
