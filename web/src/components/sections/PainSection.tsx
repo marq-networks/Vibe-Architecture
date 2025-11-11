@@ -6,20 +6,19 @@ export default function PainSection() {
       style={{ backgroundImage: "url(/painsection/bg.png)", backgroundSize: "cover" ,backgroundRepeat:"no-repeat"}}
     >
       {/* <div className="absolute inset-0 z-0 pointer-events-none bg-gradient-to-b from-transparent via-[#4B2E83]/10 to-[#070C20]/40" /> */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-        <div className="mb-2 leading-none">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
+        <div className="mb-2 gap-2">
           <span
             className="font-hero text-transparent text-[56px] md:text-[92px] font-black tracking-tight"
             style={{ WebkitTextStroke: "1px rgba(255,255,255,0.12)" }}
           >
             The
           </span>
-          <br />
+         
           <span
-            className="font-hero text-transparent text-[56px] md:text-[92px] font-black tracking-tight"
-            style={{ WebkitTextStroke: "1px rgba(255,255,255,0.2)" }}
-          >
-            Pain
+                     className="ml-2 font-hero text-white/20 text-[56px] md:text-[92px] font-black tracking-tight"
+     >
+             Pain
           </span>
         </div>
         <h2 className="font-hero text-white text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">

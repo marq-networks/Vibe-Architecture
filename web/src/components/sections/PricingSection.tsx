@@ -90,7 +90,7 @@ export default function PricingSection() {
               priority
             />
           </div>
-          <div className="text-center">
+          <div className="text-center mt-2">
             <p className="text-[11px] text-zinc-400">Powered by The Online Adjunct</p>
           </div>
         </div>
