@@ -14,8 +14,8 @@ export default function PricingSection() {
             PRICING
           </span>
           <span
-                     className="font-hero text-white/20 text-[56px] md:text-[92px] font-black tracking-tight"
-     >
+            className="font-hero text-white/20 text-[56px] md:text-[92px] font-black tracking-tight"
+          >
             {" / OFFER"}
           </span>
         </div>

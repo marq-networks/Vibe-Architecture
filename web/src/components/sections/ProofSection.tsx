@@ -8,9 +8,9 @@ export default function ProofSection() {
       id="proof"
       style={{ backgroundImage: "url(/proof/bg.png)", backgroundSize: "cover", backgroundPosition: "center" }}
     >
-      
 
-      <div className="  mx-auto pl-8 grid items-center gap-10 md:grid-cols-2">
+
+      <div className="max-w-7xl mx-auto pl-8 grid items-center gap-10 md:grid-cols-2">
         {/* Left copy block */}
         <div className=" z-10">
           <div className="mb-2 leading-none">
@@ -20,10 +20,10 @@ export default function ProofSection() {
             >
               PROOF
             </span>
-            <br />
+
             <span
-                         className="font-hero text-white/20 text-[56px] md:text-[92px] font-black tracking-tight"
-     >
+              className="font-hero text-white/20 text-[56px] md:text-[92px] font-black tracking-tight"
+            >
               & CREDIBILITY
             </span>
           </div>
@@ -47,13 +47,12 @@ export default function ProofSection() {
 
         {/* Right laptop image */}
         <div className="relative z-10">
-          <Image
+          <img
             src="/proof/Macbook Air (2022).png"
             alt="Macbook with dashboard screenshot"
-            width={900}
-            height={520}
-            className="mx-auto"
-            priority
+           
+            className="mx-auto w-full"
+
           />
         </div>
       </div>
