@@ -13,7 +13,7 @@ export default function SolutionSection() {
     <section
       className="relative min-h-[100vh] pb-12 sm:pb-16 md:pb-20 overflow-hidden"
       id="solution"
-      style={{ backgroundImage: "url(/solution/bg.png)", backgroundSize: "80%", backgroundPosition: "center" }}
+      style={{ backgroundImage: "url(/solution/bg.png)", backgroundSize: "70%", backgroundPosition: "center" }}
     >
       <div className="absolute inset-0 z-0 pointer-events-none bg-gradient-to-b from-transparent via-[#4B2E83]/10 to-[#070C20]/40" />
       <div className="relative flex flex-col justify-center items-center gap-6 z-10 max-w-7xl mx-auto text-center">

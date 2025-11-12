@@ -5,7 +5,7 @@ export default function PainSection() {
     <section
       className="relative bg-center py-12 sm:py-16 md:py-20 "
       id="pain"
-      style={{ backgroundImage: "url(/painsection/bg.png)", backgroundSize: "90%", backgroundRepeat: "no-repeat" }}
+      style={{ backgroundImage: "url(/painsection/bg.png)", backgroundSize: "80%", backgroundRepeat: "no-repeat" }}
     >
       {/* <div className="absolute inset-0 z-0 pointer-events-none bg-gradient-to-b from-transparent via-[#4B2E83]/10 to-[#070C20]/40" /> */}
       <div className="max-w-6xl min-h-[70vh] mx-auto absolute inset-0 pointer-events-none z-0">

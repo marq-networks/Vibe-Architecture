@@ -6,7 +6,7 @@ export default function ProofSection() {
     <section
       className="relative py-12 sm:py-16 md:py-24 overflow-hidden"
       id="proof"
-      style={{ backgroundImage: "url(/proof/bg.png)", backgroundSize: "cover", backgroundPosition: "center" }}
+      style={{ backgroundImage: "url(/proof/bg.png)",backgroundRepeat:"no-repeat", backgroundSize: "60%", backgroundPosition: "center" }}
     >
 
 
