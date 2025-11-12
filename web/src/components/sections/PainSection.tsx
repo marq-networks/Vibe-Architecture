@@ -9,17 +9,17 @@ export default function PainSection() {
     >
       {/* <div className="absolute inset-0 z-0 pointer-events-none bg-gradient-to-b from-transparent via-[#4B2E83]/10 to-[#070C20]/40" /> */}
       <div className="max-w-6xl min-h-[70vh] mx-auto absolute inset-0 pointer-events-none z-0">
-        <div className="absolute left-0 top-22 sm:left-8 sm:top-16">
-          <Image src="/painsection/left1.png" alt="Left decorative 1" width={96} height={96} className="opacity-80" />
+        <div className="absolute left-0 top-16 sm:left-8 sm:top-16">
+          <Image src="/painsection/left1.png" alt="Left decorative 1" width={96} height={96} className="opacity-80 animate-float float-delay-1" />
         </div>
         <div className="absolute left-10 bottom-12 sm:left-10 sm:bottom-16">
-          <Image src="/painsection/left2.png" alt="Left decorative 2" width={96} height={96} className="opacity-80" />
+          <Image src="/painsection/left2.png" alt="Left decorative 2" width={96} height={96} className="opacity-80 animate-float float-delay-2" />
         </div>
-        <div className="absolute right-6 top-22 sm:right-10 sm:top-16">
-          <Image src="/painsection/right1.png" alt="Right decorative 1" width={96} height={96} className="opacity-80" />
+        <div className="absolute right-6 top-12 sm:right-10 sm:top-16">
+          <Image src="/painsection/right1.png" alt="Right decorative 1" width={96} height={96} className="opacity-80 animate-float float-delay-3" />
         </div>
         <div className="absolute right-4 bottom-12 sm:right-8 sm:bottom-16">
-          <Image src="/painsection/right2.png" alt="Right decorative 2" width={96} height={96} className="opacity-80" />
+          <Image src="/painsection/right2.png" alt="Right decorative 2" width={96} height={96} className="opacity-80 animate-float" />
         </div>
       </div>
       <div className="relative min-h-[100vh] gap-6 z-10 max-w-7xl flex flex-col justify-center items-center mx-auto px-6 text-center">

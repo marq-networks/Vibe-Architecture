@@ -112,3 +112,16 @@ h1, h2, h3, .font-display {
   box-shadow: 0 0 24px rgba(139,92,246,0.45);
 }
 .cta-btn span { font-weight: 600; }
+
+/* Gentle vertical float animation for decorative images */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-float {
+  animation: float 2s ease-in-out infinite;
+  will-change: transform;
+}
+.float-delay-1 { animation-delay: 0.4s; }
+.float-delay-2 { animation-delay: 0.8s; }
+.float-delay-3 { animation-delay: 1.2s; }
