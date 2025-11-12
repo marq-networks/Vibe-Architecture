@@ -7,10 +7,10 @@ import { useState } from "react";
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   return (
-    <header className="fixed inset-x-0 top-0 z-50">
+    <header className="relative z-20">
       <div className="relative max-w-7xl mx-auto px-6">
         {/* Top row */}
-        <div className="mt-0 md:mt-4 flex items-center justify-between px-4 py-3">
+        <div className=" flex items-center justify-between px-4 ">
           {/* Brand */}
           <div className="flex items-center">
             <Image
