@@ -4,7 +4,7 @@ import CTAButton from "@/components/CTAButton";
 export default function HeroSection() {
   return (
     <section
-      className="relative px-2 sm:py-16 md:py-20 overflow-hidden bg-top bg-no-repeat h-[560px] sm:h-[auto] md:h-[720px]"
+      className="relative px-2 sm:py-16 md:py-20 overflow-hidden bg-top bg-no-repeat min-h-[720px]"
       id="hero"
       style={{ backgroundImage: "url(/hero/bg.png)", backgroundSize: "cover", backgroundPosition: "bottom center" }}
     >
