@@ -42,14 +42,9 @@ export default function BlueprintSection() {
               className="font-hero text-transparent text-[56px] md:text-[92px] font-black tracking-tight"
               style={{ WebkitTextStroke: "1px rgba(255,255,255,0.12)" }}
             >
-              EMOTIONAL
-            </span>
-            <br />
-            <span
-                        className="font-hero text-white/20 text-[56px] md:text-[92px] font-black tracking-tight"
-     >
               ANCHOR
             </span>
+          
           </div>
 
           <h2 className="font-hero text-white text-[36px] sm:text-[44px] md:text-[52px] font-extrabold leading-tight">Get Your Blueprint</h2>

@@ -36,7 +36,7 @@ export default function UseCasesSection() {
               className="font-hero text-transparent text-[56px] md:text-[92px] font-black tracking-tight"
               style={{ WebkitTextStroke: "1px rgba(255,255,255,0.12)" }}
             >
-              USE <span className="text-white/20">CASES</span>
+              Case <span className="text-white/20">Study</span>
             </span>
           </div>
           <h2 className="font-hero text-white text-3xl md:text-5xl font-extrabold leading-tight text-center">Who It’s For</h2>
