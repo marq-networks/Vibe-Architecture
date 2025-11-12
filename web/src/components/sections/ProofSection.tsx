@@ -9,6 +9,13 @@ export default function ProofSection() {
       style={{ backgroundImage: "url(/proof/bg.png)",backgroundRepeat:"no-repeat", backgroundSize: "60%", backgroundPosition: "center" }}
     >
 
+      {/* Floating decorative image in center area */}
+      <div className="mx-auto inset-0 pointer-events-none z-0">
+        <div className="mx-auto text-center " style={{margin:"auto"}}>
+          <Image src="/proof/center1.png" alt="Decorative ring" width={110} height={110} className="opacity-80 mx-auto animate-float float-delay-2" />
+        </div>
+      </div>
+
 
       <div className="max-w-7xl mx-auto pl-8 grid items-center gap-10 md:grid-cols-2">
         {/* Left copy block */}
