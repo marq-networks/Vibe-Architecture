@@ -14,14 +14,14 @@ export default function Navbar() {
             <Image
               src="/navbar/logo.png"
               alt="Vibe Architects"
-              width={190}
-              height={24}
+              width={220}
+              height={28}
               priority
             />
           </div>
 
           {/* Links */}
-          <nav className="hidden md:flex items-center gap-8 text-sm opacity-90">
+          <nav className="hidden md:flex items-center gap-8 text-lg opacity-90">
             <Link href="#hero" className="font-semibold">Home</Link>
             <Link href="#pricing" className="hover:opacity-100 opacity-80">Pricing</Link>
             <Link href="#about" className="hover:opacity-100 opacity-80">About</Link>
