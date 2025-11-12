@@ -39,7 +39,7 @@ export default function BlueprintSection() {
           {/* Ghost heading above, outlined style */}
           <div className="mb-2 leading-none">
             <span
-              className="font-hero text-transparent text-[56px] md:text-[92px] font-black tracking-tight"
+              className="font-hero text-transparent text-[56px] md:text-[90px] lg:text-[130px] xl:text-[150px] font-black tracking-tight"
               style={{ WebkitTextStroke: "1px rgba(255,255,255,0.12)" }}
             >
               ANCHOR

@@ -26,7 +26,7 @@ export default function SolutionSection() {
           </span>
 
           <span
-            className="ml-2 font-hero text-white/20 text-[56px] md:text-[90px] lg:text-[130px] xl:text-[150px] font-black tracking-tight"
+            className="ml-4 font-hero text-white/20 text-[56px] md:text-[90px] lg:text-[130px] xl:text-[150px] font-black tracking-tight"
           >
             Solution
           </span>
