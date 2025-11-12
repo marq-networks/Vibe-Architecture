@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   return (
-    <header className="relative z-20">
+    <header className="absolute inset-x-0 top-5 z-20">
       <div className="relative max-w-7xl mx-auto px-6">
         {/* Top row */}
         <div className=" flex items-center justify-between px-4 ">
